@@ -1,0 +1,467 @@
+
+body{
+  margin: 0;
+  background-color: #f6f6f9;
+}
+
+body a{
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: #fff;
+} 
+.header-top a {
+  color: #cdcdcd;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  
+  
+}
+
+
+
+.header{
+  background-color: #ff6b6b;
+}
+
+.container{
+  max-width: 1233px;
+  margin: 0 auto;
+  padding: 10px 20px 0px 20px;
+  justify-content: space-between;
+  background: radial-gradient(circle farthest-corner at 10%, #8d67ff, #663bff);
+}
+
+
+.hed{
+  background-color: inherit;
+  
+}
+
+.header-top button{
+  background-color: inherit;
+  border-radius: 15px;
+  background: radial-gradient(circle farthest-corner at 10%, #ffb83c, #fffb00);
+  padding: 5px 7px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.header-top select{
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.logo img{
+  width: 200px;
+
+
+}
+
+.header-cart img{
+  width: 87px;
+  
+}
+
+.header-bottom{
+  background-color: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: inherit;
+  padding: 0px;
+  margin: 0;
+}
+
+.header-bottom input{
+  width: 700px;
+  height: 45px;
+  border-radius: 25px;
+  padding: 0 20px;
+  font-size: 15px;
+  border: none;
+}
+
+.header-top select{
+  border-radius: 15px;
+  padding: 5px 5px;
+  border: none;
+ 
+}
+
+.phone {
+  margin-left: 500px;
+}
+
+.logo{
+  margin: 10px;
+  padding-top: 10px;
+}
+
+.nav menu{
+  
+}
+
+.header-cart img{
+  width: 50px;
+}
+
+.header-user img{
+  width: 50px;
+}
+
+.menu img{
+  width: 50px;
+}
+
+.menu-bottom{
+  display: flex;
+  list-style: none; 
+  justify-content: space-between;
+  padding: 0;
+  margin-top: 0px;
+  margin: 5px;
+  font-size: 23px;
+  text-align: center;
+  width: 700px;
+}
+
+.nav-bottom{
+  width: 100%;
+  padding: 0;
+
+}
+.center{
+  width: 1200px;
+  margin: 0 auto;
+}
+.slider {
+  width: 1050px;
+  height: 300px;
+  border-radius:20px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 20px;
+}
+
+#slide-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.ad-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  margin: 20px 30px 20px;
+}
+
+.ad-block {
+  width: calc(50% - 10px);
+  height: 200px;
+  background-color:#ffffff;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+}
+
+
+
+.footer-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-nav li {
+  margin-right: 20px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+ 
+.contact{
+  display: block;
+  justify-content: space-between;
+  margin: 16px 10px;
+}
+
+.contact ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.contact a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact li{
+  margin-top: px;
+}
+
+
+.social a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.social ul{
+  list-style: none;
+  
+}
+
+.social li{
+}
+
+.copyright{
+  
+}
+
+.registration{
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px 0px 20px;
+}
+
+.registration h1{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+/* Style the form elements */
+.registration form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+#register-form input,
+#login-form input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+#register-form button,
+#login-form input[type="submit"] {
+  width: 100%;
+  padding: 14px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#register-form button,
+#login-form input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+.switch {
+  text-align: center;
+  margin-top: 20px;
+}
+.switch a {
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #333;
+}
+
+
+/* Add styles for the navigation menu */
+#nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+#nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #333;
+  display: block;
+  transition: 0.3s;
+}
+
+#nav a:hover {
+  color: #f1f1f1;
+}
+
+.container-cart1 {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+  
+}
+
+.box1 {
+  width: 800px;
+  height: auto;
+  background-color: #ffffff;
+  padding-bottom: 12px;
+  margin: 10px;
+  border-radius: 20px;
+  margin-right: 40px;
+
+}
+
+.box1-top h1{
+  padding-left: 15px;
+  padding-top: 20px;
+  
+  
+}
+
+.box1-bottom{
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+
+
+.box1-bottom h1{
+  font-size: 20px;
+  width: 300px;
+  margin-left: 20px;
+}
+
+
+.box1-bottom img {
+  width: 120px;
+  border-radius: 10px;
+}
+
+.box2 {
+  width: 300px;
+  height: auto;
+  background-color: #ffffff;
+  background-color: #ffffff;
+  padding-bottom: 12px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.box2 h1{
+  margin-left: 20px;
+}
+
+
+.kolvo-picker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+} 
+
+.kolvo-picker button {
+  background-color: #f6f6f9;
+  border: none;
+  color: #000;
+  font-size: 16px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 100%;
+  font-weight: 700;
+}
+
+.kolvo-picker input {
+  width: 30px;
+  height: 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 8px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.cost h2{
+  font-size: 40px;
+  margin: 0
+  ;
+}
+
+.registr{
+  width: 774px;
+  height: 551px;
+  margin: 30px auto;
+  padding: 0px 40px 20px 40px;
+  background-color: #828282;
+  border-radius: 26px;
+  box-sizing: border-box;
+  
+}
+
+.reg1 h3{
+  text-align: center;
+  font-size: 36px;
+  padding-top:  20px;
+}
+
+.reg2 h4{
+
+}
+
+h1,h2,h3,h4{
+  font-family: 'Inter';
+}
+
+.reg4 button{
+  margin: 0 auto;
+  text-align: center;
+}
