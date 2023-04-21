@@ -78,3 +78,16 @@ function updatePhonePlaceholder() {
   placeholder += ") XXX-XX-XX";
   phoneInput.placeholder = placeholder;
 }
+
+  var dropdownToggle = document.querySelector('.dropdown-toggle');
+  var dropdownMenu = document.querySelector('.dropdown-menu');
+
+menuItem.addEventListener('mouseenter', function() {
+  var dropdownMenu = this.querySelector('.dropdown-menu');
+  dropdownMenu.classList.add('show');
+});
+
+menuItem.addEventListener('mouseleave', function() {
+  var dropdownMenu = this.querySelector('.dropdown-menu');
+  dropdownMenu.classList.remove('show');
+});

@@ -188,7 +188,13 @@ body a{
   margin-bottom: 20px;
   border-radius: 20px;
 }
+.dropdown-menu {
+  display: none;
+}
 
+.menu-item:hover .dropdown-menu {
+  display: block;
+}
 footer {
   display: flex;
   justify-content: space-between;
