@@ -196,79 +196,11 @@ body a{
   display: block;
 }
 
-.footer {  
-  background-color: #333;
-  color: #fff;
-}
-
-.footer-max{
-  max-width: 1233px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
-  margin: 0;
-  margin: 0 auto;
-}
-
-
-
-.footer-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.footer-nav li {
-  margin-right: 20px;
-}
-
-.footer-nav a {
-  color: #fff;
-  text-decoration: none;
-}
- 
-.contact{
-  display: block;
-  justify-content: space-between;
-  margin: 16px 10px;
-}
-
-.contact ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.contact a{
-  color: #fff;
-  text-decoration: none;
-}
-
-.contact li{
-  margin-top: px;
-}
-
-
-.social a{
-  color: #fff;
-  text-decoration: none;
-}
-
-.social ul{
-  list-style: none;
-  
-}
 
 
 
 
-
-.box1 {
+.container-cart1 {
   width: 800px; 
   height: auto;
   background-color: #7b7b7b;
@@ -378,10 +310,16 @@ body a{
 .cart1{
   margin-left: 20px;
 }
-
-
+/* 
+.cartcont{
+  display: flex;
+} */
 
 .container-cart2{
+  display: flex;
+}
+
+cart2{
   display: flex;
 }
 
@@ -625,4 +563,72 @@ body a{
   margin: 0;
 }
 
+
+.footer {  
+  background-color: #333;
+  color: #fff;
+}
+
+.footer-max{
+  max-width: 1233px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  margin: 0 auto;
+}
+
+
+
+.footer-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-nav li {
+  margin-right: 20px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+ 
+.contact{
+  display: block;
+  justify-content: space-between;
+  margin: 16px 10px;
+}
+
+.contact ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.contact a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact li{
+  margin-top: px;
+}
+
+
+.social a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.social ul{
+  list-style: none;
+  
+}
 
