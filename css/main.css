@@ -137,8 +137,8 @@ body a{
   margin: 0 auto;
 }
 .slider {
-  width: 1050px;
-  height: 300px;
+  width: 1024px;
+  height: 263px;
   border-radius:20px;
   overflow: hidden;
   margin: 0 auto;
@@ -347,7 +347,7 @@ footer {
 .box1 {
   width: 800px;
   height: auto;
-  background-color: #ffffff;
+  background-color: #7b7b7b;
   padding-bottom: 12px;
   margin: 10px;
   border-radius: 20px;
@@ -387,10 +387,9 @@ footer {
 .box2 {
   width: 300px;
   height: auto;
-  background-color: #ffffff;
-  background-color: #ffffff;
+  background-color: #676767;
   padding-bottom: 12px;
-  margin: 10px;
+  margin-top: 40px;
   border-radius: 20px;
 }
 
@@ -436,7 +435,19 @@ footer {
   ;
 }
 
-.registr{
+.box3{
+  width: 800px;
+  height: auto;
+  background-color: #ffffff;
+  padding-bottom: 12px;
+  margin: 10px;
+  border-radius: 20px;
+  margin-right: 40px;
+
+  }
+
+
+/* .registr{
   width: 774px;
   height: 551px;
   margin: 30px auto;
@@ -464,4 +475,231 @@ h1,h2,h3,h4{
 .reg4 button{
   margin: 0 auto;
   text-align: center;
+} */
+
+.registr {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ccc;
+  margin: 30px auto;
+  padding: 0px 40px 20px 40px;
+  border-radius: 26px;
+
+}
+
+.reg1 h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top:  20px;
+}
+
+.reg2 h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.phone-input select {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  appearance: none;
+}
+
+.phone-input input[type="tel"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.reg4 button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.reg4 button:hover {
+  background-color: #3e8e41;
+}
+
+.reg5 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.reg6 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.reg7 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+.checkbox-container label {
+  font-size: 22px;
+  color: #555;
+}
+
+
+.ad-blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 0 auto;
+  margin: 20px;
+  margin-top: 30px;
+}
+
+.ad-block {
+  text-align: center;
+  width: 360PX;
+  height: 268px;
+
+}
+
+.ad-block img {
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+/* .phone-input {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.phone-input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#region {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-size: 16px;
+  padding: 10px;
+  width: 120px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+} */
+
+.phone-input-separator {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  background-color: #ccc;
+}
+
+#phone {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-size: 16px;
+  padding: 10px;
+  flex: 1;
+}
+
+
+/* Стили для контейнера с карточками товаров */
+.product-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Стили для карточки товара */
+.product-card {
+  margin: 10px;
+  width: calc(25% - 20px); /* Ширина карточки, вычисляемая на основе 3 рядов по 4 карточки и отступов */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для изображения товара */
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Стили для названия товара */
+.product-name {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Стили для цены товара */
+.product-price {
+  padding: 10px;
+  font-size: 16px;
+  color: #888;
+}
+
+/* Стили для акционной цены товара */
+.product-sale-price {
+  font-size: 20px;
+  color: #c00;
+  font-weight: bold;
+}
+
+/* Стили для метки "Sale" */
+.product-label-sale {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #c00;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  transform: rotate(45deg);
+  z-index: 1;
 }

@@ -66,26 +66,31 @@
             <h4>Контактный телефон</h4>
         </div>
 
-        <label for="phone">Введите номер телефона:</label>
         <div class="phone-input">
-          <select id="region" name="region" onchange="updatePhonePlaceholder()">
-            <option value="+7">Россия (+7)</option>
-            <option value="+1">США (+1)</option>
-            <option value="+44">Великобритания (+44)</option>
+        <div class="phone-input-wrapper">
+            <select id="region" name="region" onchange="updatePhonePlaceholder()">
+            <option value="+7">+7</option>
+            <option value="+1">+1</option>
+            <option value="+44">+44</option>
             <!-- Другие варианты регионов -->
-          </select>
-          <input type="tel" id="phone" name="phone" required oninput="updatePhone()" placeholder="(XXX) XXX-XX-XX">
+            </select>
+            <div class="phone-input-separator"></div>
+            <input type="tel" id="phone" name="phone" required oninput="updatePhone()" placeholder="(XXX) XXX-XX-XX">
         </div>
-        
+        </div>
+
         <div class="reg4">
             <button>Получить код</button>
         </div>
-        <div class="reg5">
-            Чужой компьюер
+        <div class="reg5 checkbox-container">
+            <input type="checkbox" id="foreign-computer" name="foreign-computer">
+            <label for="foreign-computer">Чужой компьютер</label>
         </div>
-        <div class="reg6">
-            Получать эксклюзивные скидки в SMS-рассылке Bulvar
-        </div>
+          
+        <div class="reg6 checkbox-container">
+            <input type="checkbox" id="exclusive-discounts" name="exclusive-discounts">
+            <label for="exclusive-discounts">Получать эксклюзивные скидки в SMS-рассылке Bulvar</label>
+        </div>          
         <div class="reg7">
             Согласен с условиями Правил пользования торговой площадкой и правилами возврата
         </div>

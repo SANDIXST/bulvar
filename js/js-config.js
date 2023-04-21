@@ -1,7 +1,7 @@
     
 
 
-var images = ["img/del1.jpg","img/11.jpg", "img/12.jpg", "img/13.jpg"];
+var images = ["img/ocr.jpeg","img/ocr1.jpeg", "img/ocr2.jpeg", "img/13.jpg"];
 var currentImageIndex = 0;
 
 function changeSlide(direction) {
@@ -54,3 +54,27 @@ plusButton.addEventListener('click', function() {
   totalItems++;
   totalPriceField.innerText = pricePerItem * totalItems;
 });
+
+let selectedRegion = document.getElementById("region").value;
+
+function updatePhone() {
+  let phoneInput = document.getElementById("phone");
+  let phone = phoneInput.value.replace(/\D/g, '');
+  let formattedPhone = selectedRegion + " (" + phone.substring(0, 3) + ") " + phone.substring(3, 6) + "-" + phone.substring(6, 8) + "-" + phone.substring(8, 10);
+  phoneInput.value = formattedPhone;
+}
+
+function updatePhonePlaceholder() {
+  selectedRegion = document.getElementById("region").value;
+  let phoneInput = document.getElementById("phone");
+  let placeholder = "(";
+  for (let i = 0; i < selectedRegion.length; i++) {
+    if (/\d/.test(selectedRegion[i])) {
+      placeholder += "X";
+    } else {
+      placeholder += selectedRegion[i];
+    }
+  }
+  placeholder += ") XXX-XX-XX";
+  phoneInput.placeholder = placeholder;
+}
