@@ -1,6 +1,6 @@
 
 body{
-  margin: 0;
+  margin: 0 ;
   background-color: #f6f6f9;
 }
 
@@ -21,7 +21,7 @@ body a{
 
 
 .header{
-  background-color: #ff6b6b;
+  background: #663bff;;
 }
 
 .container{
@@ -29,7 +29,7 @@ body a{
   margin: 0 auto;
   padding: 10px 20px 0px 20px;
   justify-content: space-between;
-  background: radial-gradient(circle farthest-corner at 10%, #8d67ff, #663bff);
+  background: inherit;
 }
 
 
@@ -195,13 +195,22 @@ body a{
 .menu-item:hover .dropdown-menu {
   display: block;
 }
-footer {
+
+.footer {  
+  background-color: #333;
+  color: #fff;
+}
+
+.footer-max{
+  max-width: 1233px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 20px;
   background-color: #333;
   color: #fff;
   margin: 0;
+  margin: 0 auto;
 }
 
 
@@ -588,9 +597,9 @@ h1,h2,h3,h4{
 }
 
 .ad-block {
-  text-align: center;
-  width: 360PX;
-  height: 268px;
+  width: 380PX;
+  height: 288px;
+  
 
 }
 
@@ -600,6 +609,10 @@ h1,h2,h3,h4{
   
 }
 
+.adcont {
+  max-width: 1233px;
+  margin: 0 auto;
+}
 
 /* .phone-input {
   display: flex;
@@ -650,6 +663,8 @@ h1,h2,h3,h4{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 1233px;
+  margin: 0 auto;
 }
 
 .product-card {
