@@ -1,7 +1,7 @@
     
 
 
-var images = ["img/Rectangle 17.png","img/crocsban.jpeg", "img/bsblc.jpeg", "img/sbp.jpeg"];
+var images = ["img/bsblc.jpeg", "img/Rectangle 17.png","img/crocsban.jpeg", "img/sbp.jpeg"];
 var currentImageIndex = 0;
 
 function changeSlide(direction) {
@@ -78,4 +78,3 @@ function updatePhonePlaceholder() {
   placeholder += ") XXX-XX-XX";
   phoneInput.placeholder = placeholder;
 }
-
