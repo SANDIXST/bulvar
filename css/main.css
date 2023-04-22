@@ -21,7 +21,7 @@ body a{
 
 
 .header{
-  background: #663bff;;
+  background: rgb(216, 88, 37);;
 }
 
 .container{
@@ -54,9 +54,12 @@ body a{
 }
 
 .logo img{
-  width: 200px;
+  width: 150px;
 
+}
 
+.logo{
+  padding-top: 10px;
 }
 
 .header-cart img{
@@ -94,10 +97,7 @@ body a{
   margin-left: 500px;
 }
 
-.logo{
-  margin: 10px;
-  padding-top: 10px;
-}
+
 
 .nav menu{
   
@@ -310,10 +310,10 @@ body a{
 .cart1{
   margin-left: 20px;
 }
-/* 
+
 .cartcont{
   display: flex;
-} */
+}
 
 .container-cart2{
   display: flex;
@@ -377,7 +377,7 @@ cart2{
 }
 
 .reg4 button {
-  background-color: #663bff;
+  background-color: rgb(216, 88, 37);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -390,7 +390,7 @@ cart2{
 }
 
 .reg4 button:hover {
-  background-color: #5526ff;
+  background-color: rgb(131, 51, 19);
 }
 
 .reg5 {
