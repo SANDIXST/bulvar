@@ -914,7 +914,11 @@ hr {
   background-color: #fff;
   cursor: pointer;
 }
-
+/* тут поменял */
+.size-selection button:focus {
+  outline: none;
+  background-color: yellow;
+}
 .add-to-cart-button {
   padding: 10px 15px;
   border-radius: 5px;
