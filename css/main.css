@@ -249,7 +249,7 @@ body a{
   padding-bottom: 12px;
   margin-top: 50px;
   border-radius: 20px;
-  padding: 10px;
+  padding: 10px 20px 10px 20px;
 }
 
 .box2 h1{
@@ -261,26 +261,38 @@ body a{
   margin: 10px;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 
+.box2-kolvo h3{
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
 
-.box2-button{
+.box2-button button{
   background-color: rgb(216, 88, 37);
   color: white;
-  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
+  width: 100%;
+  
   
   
 }
 
-.box2-button:hover {
+.box2-button button:hover {
   background-color: rgb(131, 51, 19);
 }
 
+
+.box2-button h2{
+  margin: 10px;
+}
 
 .total-price{
   margin-left: 100px;
@@ -359,13 +371,27 @@ body a{
 
 .cartcont{
   display: flex;
+  max-width: 1233px;
+  margin: 0 auto;
 }
 
 .container-cart2{
   display: flex;
 }
 
+.box2-sogl h6{
+  font-size: 16px;
+  margin: 10px 0 10px 0;
+  
+}
 
+.box2-sogl a{
+  font-size: 16px;
+  margin: 10px 0 10px 0;
+  color: #000;
+  text-decoration: underline;
+  
+}
 
 
 .registr {
@@ -567,7 +593,7 @@ body a{
 
 .product-card {
   margin: 10px;
-  width: calc(20% - 20px);
+  width: calc(24% - 20px);
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
