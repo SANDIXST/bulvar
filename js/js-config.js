@@ -1,7 +1,7 @@
     
 
 
-var images = ["img/Rectangle 17.png","img/crocsban.jpeg", "img/ocr2.jpeg"];
+var images = ["img/Rectangle 17.png","img/crocsban.jpeg", "img/bsblc.jpeg", "img/sbp.jpeg"];
 var currentImageIndex = 0;
 
 function changeSlide(direction) {

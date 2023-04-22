@@ -593,7 +593,7 @@ body a{
 
 .product-card {
   margin: 10px;
-  width: calc(20% - 20px);
+  width: calc(24% - 20px);
   border: 1px solid #ddd;
   border-radius: 20px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
