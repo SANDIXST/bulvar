@@ -1,7 +1,7 @@
     
 
 
-var images = ["img/Rectangle 17.png","img/crocsban.jpeg", "img/ocr2.jpeg", "img/13.jpg"];
+var images = ["img/Rectangle 17.png","img/crocsban.jpeg", "img/ocr2.jpeg"];
 var currentImageIndex = 0;
 
 function changeSlide(direction) {
@@ -79,15 +79,3 @@ function updatePhonePlaceholder() {
   phoneInput.placeholder = placeholder;
 }
 
-  var dropdownToggle = document.querySelector('.dropdown-toggle');
-  var dropdownMenu = document.querySelector('.dropdown-menu');
-
-menuItem.addEventListener('mouseenter', function() {
-  var dropdownMenu = this.querySelector('.dropdown-menu');
-  dropdownMenu.classList.add('show');
-});
-
-menuItem.addEventListener('mouseleave', function() {
-  var dropdownMenu = this.querySelector('.dropdown-menu');
-  dropdownMenu.classList.remove('show');
-});
