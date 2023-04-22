@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
 	  <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <title>Bulvar - магазин мужской одежды</title>
+    <title>Bulvar</title>
     <link rel="stylesheet" href="css/nomrolize-css">
 	  <link rel="stylesheet" href="css/main.css">
 </head>
@@ -50,95 +50,75 @@
                           <a href="sale.html" class="menu-link">Акции</a>
                       </li>
                       <li class="menu-item">
-                          <a href="#" class="menu-link">Оплата и доставка</a>
+                          <a href="checkout.html" class="menu-link">Оплата и доставка</a>
                       </li>
                       <li class="menu-item">
-                          <a href="#" class="menu-link">Контакты</a>
+                          <a href="contact.html" class="menu-link">Контакты</a>
                       </li>
                   </ul>
               </nav>
           </div>
         </div>
-    </div>
+    </div>    
+    <div class="container-check">
+        <h1>Оплата и доставка</h1>
+        <div class="form-check">
+            <form action="process_payment.php" method="POST">
+            <div class="dost">
+                <h2>Информация о доставке</h2>
+                <label for="name">ФИО:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="address">Адрес доставки:</label>
+                <input type="text" id="address" name="address" required>
+                <label for="city">Город:</label>
+                <input type="text" id="city" name="city" required>
+                <label for="country">Страна:</label>
+                <input type="text" id="country" name="country" required>
+                <label for="zip">Индекс:</label>
+                <input type="text" id="zip" name="zip" required>
+            </div>  
+            <h2>Способ оплаты</h2>
+            <div class="payment-methods">
+                <label>
+                <input type="radio" name="payment_method" value="card" checked>
+                Оплата картой
+                </label>
+                <label>
+                <input type="radio" name="payment_method" value="paypal">
+                Оплата через PayPal
+                </label>
+            </div>
     
-    <div class="payment container"> <!-- добавляем блок с формой оплаты -->
-        <div class="payment-title">
-            <h2>Оплата и доставка</h2>
-        </div>
-        <div class="payment-info">
-            <div class="payment-form">
-                <form action="#" method="POST">
-                    <div class="form-row">
-                        <label for="name">ФИО</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="phone">Телефон</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="address">Адрес доставки</label>
-                        <input type="text" id="address" name="address" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="payment-method">Способ оплаты</label>
-                        <select id="payment-method" name="payment-method">
-                            <option value="card">Банковская карта</option>
-                            <option value="cash">Наличные</option>
-                        </select>
-                    </div>
-                    <div class="form-row">
-                        <label for="card-number">Номер карты</label>
-                        <input type="text" id="card-number" name="card-number" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="card-expiry">Срок действия</label>
-                        <input type="text" id="card-expiry" name="card-expiry" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="card-cvv">CVV</label>
-                        <input type="text" id="card-cvv" name="card-cvv" required>
-                    </div>
-                    <button type="submit">Оплатить</button>
-                </form>
+            <h2>Детали платежа</h2>
+            <div class="detali">
+                <label for="card-number">Номер карты:</label>
+                <input type="text" id="card-number" name="card_number" required>
+                <label for="card-name">Имя владельца карты:</label>
+                <input type="text" id="card-name" name="card_name" required>
+                <label for="expiry-date">Срок действия:</label>
+                <input type="text" id="expiry-date" name="expiry_date" required>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
             </div>
-            <div class="payment-summary">
-                <h3>Ваш заказ</h3>
-                <div class="product">
-                    <img src="img/product-1.jpg" alt="">
-                    <div class="product-info">
-                        <h4>Рубашка</h4>
-                        <p>Цена: 2 000 руб.</p>
-                        <p>Количество: 1</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="img/product-2.jpg" alt="">
-                    <div class="product-info">
-                        <h4>Брюки</h4>
-                        <p>Цена: 3 500 руб.</p>
-                        <p>Количество: 1</p>
-                    </div>
-                </div>
-                <div class="total">
-                    <p>Итого: 5 500 руб.</p>
-                </div>
+            <div class="opl">
+                <button type="submit">Оплатить</button>
+                <h6>После оплаты вам перезвонят наши операторы для согласования.</h6>
             </div>
+            </form>
         </div>
-    </div>
+        <div class="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0b47a62adaba4048e6cbdf1fc62c4512cb2ec9ce074bd48df168e6e8887c21a3&amp;width=405&amp;height=323&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+      </div>
 
     <div class="footer">
         <div class="footer-max">
           <div class="footer-nav">
             <ul>
-              <li><a href="#">Каталог</a></li>
-              <li><a href="#">Акции</a></li>
-              <li><a href="#">Оплата и доставка</a></li>
-              <li><a href="#">Контакты</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="sale.html">Акции</a></li>
+                <li><a href="checkout.html">Оплата и доставка</a></li>
+                <li><a href="contact.html">Контакты</a></li>
             </ul>
           </div>
           <div class="contact">
@@ -159,4 +139,3 @@
       </div>
 </body>
 </html>
-Артём лох
